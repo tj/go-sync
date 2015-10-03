@@ -1,7 +1,9 @@
 package writer
 
-import "sync"
-import "io"
+import (
+	"io"
+	"sync"
+)
 
 // SyncWriter wraps the underlying writer in a mutex.
 type SyncWriter struct {
